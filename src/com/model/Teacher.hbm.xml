@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.model.Teacher" table="tb_Teacher">
+    <id name="tid" type="java.lang.Integer" column="tid">
+        <generator class="native"/>
+    </id>
+    <property name="acc_tnum" type="java.lang.String" column="acc_tnum"></property>
+    <property name="tname" type="java.lang.String" column="tname"></property>
+    <property name="password" type="java.lang.String" column="password" ></property>
+    <property name="ttel" type="java.lang.String" column="ttel" ></property>
+</class>
+
+</hibernate-mapping>

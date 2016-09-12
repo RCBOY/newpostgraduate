@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.model.Assistant" table="tb_assistant">
+        <id name="aid" type="java.lang.Integer" column="aid">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="acc_num" type="java.lang.String" column="acc_num"></property>
+        <property name="aname" type="java.lang.String" column="aname" ></property>
+        <property name="atel" type="java.lang.String" column="atel" ></property>
+        <property name="password" type="java.lang.String" column="password" ></property>
+    </class>
+</hibernate-mapping>

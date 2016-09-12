@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.model.Iterm" table="tb_Iterm">
+    <id name="iid" type="java.lang.Integer" column="iid">
+        <generator class="native"/>
+    </id>
+    <property name="iname" type="java.lang.String" column="iname"></property>
+    <property name="type" type="java.lang.String" column="type"></property>
+    <property name="mark" type="java.lang.Integer" column="mark"></property>
+</class>
+</hibernate-mapping>

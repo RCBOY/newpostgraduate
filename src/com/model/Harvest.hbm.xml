@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.model.Harvest" table="tb_harvest">
+    <id name="hid" column="hid">
+        <generator class="native"/>
+    </id>
+    <property name="comment" type="text" column="comment" not-null="false"></property>
+    <property name="time" type="java.util.Date" column="time"></property>
+    <many-to-one name="iterms" column="iid"></many-to-one>
+    <many-to-one name="student" column="Stu_sid"></many-to-one>
+
+</class>
+</hibernate-mapping>

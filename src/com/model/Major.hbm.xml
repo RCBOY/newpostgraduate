@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.model.Major" table="tb_Major">
+    <id name="mid" type="java.lang.Integer" column="mid">
+        <generator class="native"/>
+    </id>
+    <property name="grade" type="java.lang.String" column="grade"></property>
+    <property name="profession" type="java.lang.String" column="profession"></property>
+</class>
+</hibernate-mapping>
